@@ -74,6 +74,7 @@ Document your configuration, including IP addresses, DNS settings, and access co
 1.) Azure Setup:
 Create an Azure Virtual Network (VNet).
 Establish a VPN or ExpressRoute connection to on-premises if needed.
+  
 2.) Azure Virtual Machines (VMs):
 Deploy Windows Server VMs for Domain Controllers (DCs).
 Assign static IP addresses within the Azure VNet.
@@ -87,9 +88,11 @@ Assign static IP addresses within the Azure VNet.
 1.) Network Configuration:
 Configure Azure DNS to point to DCs as DNS servers.
 Set up Network Security Groups for VM communication.
+  
 2.) Active Directory Installation:
 Install Active Directory Domain Services (AD DS) on VMs.
 Promote VMs to domain controllers.
+
 3.) DNS Configuration:
 Create DNS zones and records for the domain in AD DS.
 Ensure VMs use each other as primary and secondary DNS.
@@ -104,9 +107,11 @@ Ensure VMs use each other as primary and secondary DNS.
 4.) Access Control (Optional):
 Implement Azure AD Connect for identity synchronization.
 Set up proper access controls and permissions in Azure.
+  
 5.) Monitoring and Maintenance:
 Establish monitoring and alerts for AD health.
 Regularly apply updates and patches to Windows Server VMs.
+
 6.) Documentation:
 Document network settings, DNS configurations, and access controls.
 </p>
