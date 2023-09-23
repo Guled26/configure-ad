@@ -41,26 +41,32 @@ Ensure proper network security group rules for communication.
 
 Install Active Directory Domain Services (AD DS) on Windows Server VMs.
 Promote these VMs to domain controllers in a new or existing forest/domain.
+
 -Step 5: DNS Configuration:
 
 Configure DNS zones and records for your domain within AD DS.
 Ensure that DNS settings on VMs point to each other for resolution.
+
 -Step 6: Site-to-Site VPN (Optional):
 
 Establish a VPN connection to your on-premises network, if required.
 Configure proper routing and connectivity between on-premises and Azure.
+
 -Step 7: Backup and Recovery:
 
 Implement regular backups of Active Directory data.
 Ensure a disaster recovery plan is in place.
+
 -Step 8: Security and Access Control:
 
 Implement Azure AD Connect to synchronize on-premises and Azure AD identities.
 Set up proper access controls and permissions within Azure.
+
 -Step 9: Monitoring and Maintenance:
 
 Implement monitoring and alerting for AD health.
 Regularly apply updates and patches to Windows Server VMs.
+
 -Step 10: Documentation:
 
 Document your configuration, including IP addresses, DNS settings, and access controls.
