@@ -41,29 +41,73 @@ Ensure proper network security group rules for communication.
 
 Install Active Directory Domain Services (AD DS) on Windows Server VMs.
 Promote these VMs to domain controllers in a new or existing forest/domain.
+-Step 5: DNS Configuration:
+
+Configure DNS zones and records for your domain within AD DS.
+Ensure that DNS settings on VMs point to each other for resolution.
+-Step 6: Site-to-Site VPN (Optional):
+
+Establish a VPN connection to your on-premises network, if required.
+Configure proper routing and connectivity between on-premises and Azure.
+-Step 7: Backup and Recovery:
+
+Implement regular backups of Active Directory data.
+Ensure a disaster recovery plan is in place.
+-Step 8: Security and Access Control:
+
+Implement Azure AD Connect to synchronize on-premises and Azure AD identities.
+Set up proper access controls and permissions within Azure.
+-Step 9: Monitoring and Maintenance:
+
+Implement monitoring and alerting for AD health.
+Regularly apply updates and patches to Windows Server VMs.
+-Step 10: Documentation:
+
+Document your configuration, including IP addresses, DNS settings, and access controls.
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src= "https://i1.wp.com/theithollow.com/wp-content/uploads/2016/07/AzureNet0.png?fit=1056%2C373&ssl=1"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1.) Azure Setup:
+Create an Azure Virtual Network (VNet).
+Establish a VPN or ExpressRoute connection to on-premises if needed.
+2.) Azure Virtual Machines (VMs):
+Deploy Windows Server VMs for Domain Controllers (DCs).
+Assign static IP addresses within the Azure VNet.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://arminreiter.com/wp-content/uploads/2016/12/20161219_01_overview-1024x659.png"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1.) Network Configuration:
+Configure Azure DNS to point to DCs as DNS servers.
+Set up Network Security Groups for VM communication.
+2.) Active Directory Installation:
+Install Active Directory Domain Services (AD DS) on VMs.
+Promote VMs to domain controllers.
+3.) DNS Configuration:
+Create DNS zones and records for the domain in AD DS.
+Ensure VMs use each other as primary and secondary DNS.
+
+</p>
+<br />
+
+<p>
+<img src="https://learn.microsoft.com/en-us/azure/role-based-access-control/media/shared/rbac-scope.png"/>
+</p>
+<p>
+4.) Access Control (Optional):
+Implement Azure AD Connect for identity synchronization.
+Set up proper access controls and permissions in Azure.
+5.) Monitoring and Maintenance:
+Establish monitoring and alerts for AD health.
+Regularly apply updates and patches to Windows Server VMs.
+6.) Documentation:
+Document network settings, DNS configurations, and access controls.
 </p>
 <br />
